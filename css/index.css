@@ -1,0 +1,181 @@
+/* ==============================================Global================================================================ */
+/* ==============================================Global================================================================ */
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #598d66;
+    padding: 20px 60px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: #598d66;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background: #598d66;
+    color: #fff;
+}
+
+.button:focus {
+    background: #d4e8d9;
+    color: #598d66;
+}
+
+.button:active {
+    color: #fff;
+    background: #376b44;
+}
+
+
+/* =============================================Header-top================================================================ */
+/* =============================================Header-top================================================================ */
+.header__top {
+    background: #e1ede6;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0;
+
+}
+
+.header__logo {
+    margin-right: 495px;
+    align-items: center;
+}
+.header__img{
+    width: 100%;
+}
+
+
+.header__nav {
+    margin-right: auto;
+}
+
+.header__nav-list {
+    display: flex;
+}
+
+.header__nav-item {
+    margin-right: 60px;
+}
+
+.header__nav-item:last-child {
+    margin-right: 0px;
+}
+
+.header__nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+}
+
+.header__nav-link>svg {
+    width: 24px;
+    height: 24px;
+}
+
+.header__nav-link>svg:hover path {
+    stroke: #598D66;
+    transition: stroke 0.3s ease;
+}
+
+.header__nav-link>svg:focus path {
+    stroke: #598D66;
+    background: #d4e8d9;
+    transition: stroke 0.3s ease;
+}
+
+.header__nav-link>svg:active path {
+    stroke: #376B44;
+    transition: stroke 0.3s ease;
+}
+
+.header__nav-link:hover {
+    color: #598d66;
+
+}
+
+.header__nav-link:focus {
+    background: #d4e8d9;
+    color: #2c2d35;
+}
+
+.header__nav-link:active {
+    color: #376b44;
+}
+.header_logo-510{
+    display: none;
+}
+.navbar{
+    display: none;
+}
+.hamburger_cart{
+    display: none;
+}
+
+/* ==============================================Header-body================================================================== */
+
+.header__body {
+    flex: 1 1 auto;
+}
+
+.header__body-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__img {
+    margin-right: 30px;
+}
+
+
+.header__title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.1;
+    color: #2c2d35;
+    max-width: 540px;
+    margin-bottom: 20px;
+}
+
+.header__title span {
+    color: #598d66;
+}
+
+.header__descr {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #86928b;
+    margin-bottom: 60px;
+}
+
+/* .header__content-button {}
+
+.header__button {}
+
+.button {} */
