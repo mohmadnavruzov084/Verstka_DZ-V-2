@@ -231,7 +231,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* Для позиционирования псевдо-элементов */
+    position: relative;
+    /* Для позиционирования псевдо-элементов */
 }
 
 .reproductions__title {
@@ -245,21 +246,27 @@
 .reproductions__tabs-container {
     display: flex;
     overflow-x: auto;
-    scrollbar-width: none; /* Для Firefox */
-    -ms-overflow-style: none; /* Для IE */
+    scrollbar-width: none;
+    /* Для Firefox */
+    -ms-overflow-style: none;
+    /* Для IE */
     padding-bottom: 10px;
-    margin-left: auto; /* Выравнивание по правому краю */
-    max-width: 65%; /* Ограничение ширины */
+    margin-left: auto;
+    /* Выравнивание по правому краю */
+    max-width: 65%;
+    /* Ограничение ширины */
 }
 
 .reproductions__tabs-container::-webkit-scrollbar {
-    display: none; /* Скрываем скроллбар */
+    display: none;
+    /* Скрываем скроллбар */
 }
 
 /* Обертка для кнопок */
 .reproductions__tabs-inner {
     display: inline-flex;
-    gap: 16px; /* Заменяем margin-right */
+    gap: 16px;
+    /* Заменяем margin-right */
     padding: 0 15px;
 }
 
@@ -276,6 +283,8 @@
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    margin-right: 32px;
+
 }
 
 .reproductions__tab-btn:last-child {
@@ -568,3 +577,96 @@
     }
 }
 
+.reproductions__tab-buttons {
+    display: flex;
+
+}
+
+
+/*=============================new-products=================================================================  */
+
+.new-products {
+    background: url(/img/pic_background.png) no-repeat center center / cover;
+    height: 100vh;
+}
+
+.new-products__inner {
+    padding: 70px 0;
+}
+
+.new-products__title {
+    display: flex;
+}
+
+.new-products__text {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    color: #f4f6f5;
+    max-width: 370px;
+    margin-bottom: 30px;
+}
+
+.new-products__img {
+    margin-right: 20px;
+}
+
+
+.new-products__decr {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    max-width: 690px;
+    margin-bottom: 30px;
+}
+
+.new-products__btn {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+    background: #eedb6d;
+    cursor: pointer;
+}
+
+.new-products__btn:hover {
+    background: #faeb97;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+}
+
+.new-products__btn:focus {
+    background: #faeb97;
+}
+
+.new-products__btn:active {
+    background: #d9b949;
+    color: #2c2d35;
+}
+
+/* /////////////////////////////////////team///////////////////////////////////////////////////////////////// */
+
+.team__body-inner {
+    padding: 70px 0;
+}
+
+.team__our-team {
+    display: flex;
+}
+
+.team__our-team svg {
+    margin-right: 30px;
+}
+
+.team__our-team svg:last-child {
+    margin-right: 0px;
+}
+
+.team__descr {
+    color: #2c2d35;
+    margin-bottom: 20px;
+}
+.team__title{
+    margin-top: 120px;
+}
