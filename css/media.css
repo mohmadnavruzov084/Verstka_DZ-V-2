@@ -407,6 +407,7 @@
 
     .header__top-inner {
         padding: 0;
+        
     }
 
     .container {
@@ -553,5 +554,8 @@
     }
     .team__our-team svg {
         margin-right: 15px;
+    }
+    .reproductions__top-inner{
+        margin-left: 10px;
     }
 }
