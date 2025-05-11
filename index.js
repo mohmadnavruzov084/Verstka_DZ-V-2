@@ -25,6 +25,7 @@ function closeMenu() {
   overlay.classList.remove("active");
   document.body.classList.remove("no-scroll");
 }
+
 //............................................Табы....................................................
 
 // Получаем все элементы табов и кнопок
@@ -139,3 +140,65 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ////////////////////////////////////Слайдер//////////////////////////////////////////////////////////////////
+
+// Табы
+document.addEventListener("DOMContentLoaded", function() {
+  const tabButtons = document.querySelectorAll(".reproductions__tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const tabId = button.dataset.tab;
+      
+      // Удаляем активные классы
+      tabButtons.forEach(btn => btn.classList.remove("active-tab"));
+      tabContents.forEach(content => content.classList.remove("active-tab"));
+      
+      // Добавляем активные классы
+      button.classList.add("active-tab");
+      document.getElementById(tabId).classList.add("active-tab");
+    });
+  });
+
+  // Инициализация Swiper только на мобильных
+  function initMobileSlider() {
+    if (window.innerWidth <= 320) {
+      if (!document.querySelector(".swiper-container")) {
+        const buttonsContainer = document.querySelector(".reproductions__tab-buttons");
+        const buttons = Array.from(buttonsContainer.querySelectorAll(".reproductions__tab-btn"));
+        
+        const swiperContainer = document.createElement("div");
+        swiperContainer.className = "swiper-container";
+        
+        const swiperWrapper = document.createElement("div");
+        swiperWrapper.className = "swiper-wrapper";
+        
+        buttons.forEach(button => {
+          const slide = document.createElement("div");
+          slide.className = "swiper-slide";
+          slide.appendChild(button.cloneNode(true));
+          swiperWrapper.appendChild(slide);
+        });
+        
+        swiperContainer.appendChild(swiperWrapper);
+        buttonsContainer.parentNode.insertBefore(swiperContainer, buttonsContainer.nextSibling);
+        
+        new Swiper(".swiper-container", {
+          slidesPerView: "auto",
+          spaceBetween: 10,
+          freeMode: true
+        });
+      }
+    } else {
+      const swiper = document.querySelector(".swiper-container");
+      if (swiper) swiper.remove();
+    }
+  }
+  
+  // Инициализация при загрузке
+  initMobileSlider();
+  
+  // Реинициализация при изменении размера
+  window.addEventListener("resize", initMobileSlider);
+});
+
