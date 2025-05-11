@@ -586,7 +586,7 @@
 /*=============================new-products=================================================================  */
 
 .new-products {
-    background: url(./img/pic_background.png) no-repeat center center / cover;
+    background: url(../img/pic_background.png) no-repeat center center / cover;
     height: 100vh;
 }
 
