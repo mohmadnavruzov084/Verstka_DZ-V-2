@@ -677,3 +677,90 @@
 .team__title {
     margin-top: 120px;
 }
+
+/* ///////////////////////////////////////Footer////////////////////////////////////////////////////////// */
+
+.footer {
+    background: #e1ede6;
+    max-height: 319px;
+}
+
+.footer__inner {
+    padding: 23px 0;
+}
+
+.footer__content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content-box_item {}
+
+.footer__img {
+    margin-bottom: 41px;
+}
+
+.footer__contact {
+    margin-bottom: 8px;
+}
+
+.footer__adres {}
+
+.footer__conteiner {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.footer__link-box {}
+
+.footer__item-link {
+    margin-bottom: 6px;
+}
+
+.footer__item {}
+
+.footer__social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-gray {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #86928b;
+}
+
+.text-gray-social {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #86928b;
+
+}
+
+.text-black {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+}
+
+.footer__social_link {
+    margin-bottom: 6px;
+}
+
+.footer__social_link:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__adaptive-box {
+    display: none;
+}
+
+.adaptive__social {
+    display: none;
+}
